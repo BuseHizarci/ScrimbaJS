@@ -16,3 +16,16 @@ function add() {
     let result = num2 + num2
     sumEl.textContent = "Sum: " + result
 }
+function divide() {
+    let result = num1 / num2
+    sumEl.textContent = "Sum: " + result
+}
+
+function subtract() {
+    let result = num1 - num2
+    sumEl.textContent = "Sum: " + result
+}
+function subtract() {
+    let result = num1 - num2
+    sumEl.textContent = "Sum: " + result
+}
