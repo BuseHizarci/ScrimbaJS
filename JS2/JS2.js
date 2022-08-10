@@ -13,6 +13,6 @@ document.getElementById("num2-el").textContent = num2
 let sumEl = document.getElementById("sum-el")
 
 function add() {
-
-    sumEl.textContent = "Sum: " + num1 + num2
+    let result = num2 + num2
+    sumEl.textContent = "Sum: " + result
 }
