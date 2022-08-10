@@ -14,5 +14,5 @@ let sumEl = document.getElementById("sum-el")
 
 function add() {
 
-sumEl.textContent= num1 + num2
+    sumEl.textContent = "Sum: " + num1 + num2
 }
