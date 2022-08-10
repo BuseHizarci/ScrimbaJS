@@ -1,21 +1,22 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px 0;
+    padding: 30px 0;
     margin: 0;
     text-align: center;
 }
 
 span {
-    border-bottom: 2px solid black;
-    padding: 4px;
+    border-bottom: 2px solid rgb(13, 16, 187);
+    padding: 8px;
+    color:rgb(130, 130, 189)
 }
 
 button {
-    margin: 20px 0;
-    background: white;
-    color: black;
+    margin: 70px 0;
+    background:#2FB5FC;
+    color:#15034f,;
     border: 1px solid black;
     font-weight: bold;
-    cursor: pointer;
-    padding: 5px 8px;
+    cursor:pointer;
+    padding: 15px 19px;
 }
