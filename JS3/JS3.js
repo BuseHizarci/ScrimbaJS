@@ -15,3 +15,12 @@ function increaseHomeScoreTwo (){
     homeScore += 2
     homeStoreEl.textContent= homeScore
 }
+
+let GuestScoreBtnOne = document.getElementById("guest-home-btn-1")
+let GuestStoreEl = document.getElementById("guest-score")
+let guestScore = 2
+
+function increaseGuestScoreOne(){
+     guestScore +- 1
+     guestStoreEl.textContent=homeScore
+}
