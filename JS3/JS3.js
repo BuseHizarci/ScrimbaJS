@@ -1,25 +1,38 @@
 let homeScoreBtnOne = document.getElementById("home-score-btn-1")
-// Birinci buttonu tanimlamadik let ile 
-// home-score-btn-1 u bul dedim ,
-
+let homeScoreBtnTwo = document.getElementById("home-score-btn-2")
+let homeScoreBtnThree = document.getElementById("home-score-btn-3")
 let homeStoreEl =document.getElementById("home-score")
-
-// home score'a bunun icine yazdiracagim icin tanimlama yaptim
-let homeScore = 2
+let homeScore = 1
 
 function increaseHomeScoreOne(){
     homeScore += 1
     homeStoreEl.textContent = homeScore
 }
-// fonksiyon home scoreu bir artttiriyor daha once belirledigimiz homescore u kendimiz yazdik
-// Id si ile kontrol edebildigimiz homescore - store un icine fonksiyonda arttirdigimizi yaziyoruz.
+
+function increaseHomeScoreTwo(){
+    homeScore += 2
+    homeStoreEl.textContent = homeScore
+}
+
+// Guest
+
+let guestScoreBtnOne = document.getElementById("guest-score-btn-1")
+let guestScoreBtnTwo = document.getElementById("guest-score-btn-2")
+let guestScoreBtnThree = document.getElementById("guest-score-btn-3")
 
 
-let GuestScoreBtnOne = document.getElementById("guest-home-btn-1")
 let GuestStoreEl = document.getElementById("guest-score")
 let guestScore = 2
 
 function increaseGuestScoreOne(){
      guestScore +- 1
-     guestStoreEl.textContent=homeScore
+     guestStoreEl.textContent=guestScore
+}
+function increaseGuestScoreTwo(){
+    guestScore +- 2
+    guestStoreEl.textContent=guestScore
+}
+function increaseGuestScoreThree(){
+    guestScore +- 3
+    guestStoreEl.textContent= guestScore
 }
