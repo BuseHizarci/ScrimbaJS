@@ -14,6 +14,10 @@ function increaseHomeScoreTwo(){
     homeStoreEl.textContent = homeScore
 }
 
+function increaseHomeScoreThree (){
+    homeScore += 3
+    homeStoreEl.textContent = homeScore
+}
 // Guest
 
 let guestScoreBtnOne = document.getElementById("guest-score-btn-1")
@@ -21,7 +25,7 @@ let guestScoreBtnTwo = document.getElementById("guest-score-btn-2")
 let guestScoreBtnThree = document.getElementById("guest-score-btn-3")
 
 
-let GuestStoreEl = document.getElementById("guest-score")
+let guestStoreEl = document.getElementById("guest-score")
 let guestScore = 2
 
 function increaseGuestScoreOne(){
