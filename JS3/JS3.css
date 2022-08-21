@@ -3,10 +3,17 @@ body {
     text-align: center;
 }
 
-.score {
+#home-score{
     background: #0a0001;
     font-size: 90px;
-    color: #F94F6D;
+    color: #d37384;
+    width: 120px;
+    margin: 20px; 
+}
+ #guest-score {
+    background: #0a0001;
+    font-size: 90px;
+    color: #d37384;
     width: 120px;
     margin: 20px;
 }

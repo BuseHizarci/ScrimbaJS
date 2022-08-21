@@ -29,14 +29,13 @@ let guestStoreEl = document.getElementById("guest-score")
 let guestScore = 2
 
 function increaseGuestScoreOne(){
-     guestScore +- 1
+     guestScore += 1
      guestStoreEl.textContent=guestScore
 }
 function increaseGuestScoreTwo(){
-    guestScore +- 2
+    guestScore += 2
     guestStoreEl.textContent=guestScore
 }
 function increaseGuestScoreThree(){
-    guestScore +- 3
+    guestScore += 3
     guestStoreEl.textContent= guestScore
-}
