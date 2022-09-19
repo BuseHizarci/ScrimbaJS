@@ -30,4 +30,142 @@ console.log(messages)
     for (let i = 10; i < 101; i += 10) {
         console.log(i)
     }
-    
+    // Array 
+    let messages = [
+    "Hey, how's it going?",        
+    "I'm great, thank you! How about you?",
+    "All good. Been working on my portfolio lately.",
+    "Same here!",
+    "Great to hear",
+    "🙌"
+]
+
+// DRY - Don't repeat yourself
+// console.log(messages[0])
+// console.log(messages[1])
+// console.log(messages[2])
+// console.log(messages[3])
+
+for (let i = 0; i < messages.length; i += 1) {
+    console.log(messages[i])
+}
+
+// Array with space between every word
+let sentence = ["Hello", "my", "name", "is", "Per"] 
+let greetingEl = document.getElementById("greeting-el")
+
+// How do you keep the spaces between the words if I remve them from the array?
+
+for (let i = 0; i < sentence.length; i++) {
+    greetingEl.textContent += sentence[i] + " "
+}
+
+
+
+
+
+// JS aciklama
+let firstCard = 10
+//Birinci kartim
+let secondCard = 4
+//Ikinci kartim
+// 1. Create a new array - cards - that contains firstCard and secondCard
+let cards = [firstCard, secondCard]
+//Kartlarimi listeledigim arrayim 
+let sum = firstCard + secondCard
+//Kartlarimin toplami
+let hasBlackJack = false
+//boolean blackjack var mi yok mu ?
+let isAlive = true
+let message = ""
+
+let messageEl = document.getElementById("message-el")
+// Mesajimin tutuldugu yer
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
+
+function startGame() {
+    renderGame()
+}
+
+function renderGame() {
+    // 2. Refer to the cards array when rendering out the cards
+    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+    sumEl.textContent = "Sum: " + sum
+    if (sum <= 20) {
+        message = "Do you want to draw a new card?"
+    } else if (sum === 21) {
+        message = "You've got Blackjack!"
+        hasBlackJack = true
+    } else {
+        message = "You're out of the game!"
+        isAlive = false
+    }
+    messageEl.textContent = message
+}
+
+
+
+function newCard() {
+    let card = 6
+    sum += card
+    cards.push(card)
+
+    renderGame()
+}
+
+
+function renderGame(){
+cardsEl.textContent = " Cards " + cards[0] + cards [1]
+sumEl.textContent = "Sum" + sum 
+if (sum > 20 ) {
+    message = "Do you want to draw ?"
+    hasBlackJack = true
+}
+}
+
+
+// Return Players 
+let player1Time = 102
+let player2Time = 107
+
+// cmd+d - ctrl+d
+function getFastestRaceTime() {
+    if (player1Time < player2Time) {
+        return player1Time
+    } else if (player2Time < player1Time) {
+        return player2Time
+    } else {
+        return player1Time
+    }
+}
+
+// let fastestRace = getFastestRaceTime()
+// console.log(fastestRace)
+
+// Write a function that returns the total race time
+// Call/invoke the function and store the returned value in a new variable
+// Finally, log the variable out
+
+function getTotalRaceTime() {
+    return player1Time + player2Time
+}
+
+let totalTime = getTotalRaceTime()
+
+console.log(totalTime)
+
+// let randomNumber = Math.random() * 6
+
+let flooredNumber = Math.floor(12.999999999999)
+
+console.log(flooredNumber)
+
+
+/* 
+
+What does Math.floor() do to positive numbers?
+
+Your answer: it removes the decimals
+
+*/
