@@ -169,3 +169,8 @@ What does Math.floor() do to positive numbers?
 Your answer: it removes the decimals
 
 */
+// Try to modify the expression so that we get a range from 1 to 6
+let randomNumber = Math.floor( Math.random() * 6 ) + 1
+
+console.log(randomNumber)
+
